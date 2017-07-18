@@ -25,7 +25,7 @@ public class Permutation {
 	        return;
 		}
 		
-		for (int i = 0; i < array.length; i++) {
+		for (int i = startPoint; i < array.length; i++) {
 			swap(array, i, startPoint);
 			permutation(createArray(array, qtd), startPoint+1, qtd);
 			swap(array, i, startPoint);
